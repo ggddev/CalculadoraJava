@@ -1,5 +1,5 @@
 package CalculadoraJava;
-public class Calculos {
+public class Calculos implements CalculosInterface{
     private double num1;
     private double num2;
     private int operador;
@@ -32,5 +32,10 @@ public class Calculos {
     
     public void setOperador(int operador){
         this.operador = operador;
+    }
+    
+    @Override
+    public double Calcular(){
+        
     }
 }
