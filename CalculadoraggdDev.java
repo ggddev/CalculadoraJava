@@ -22,6 +22,7 @@ public class CalculadoraggdDev {
         
         Calculos conta = new Calculos(num1, num2, respOperador);
         
+        System.out.println(conta.Calcular());
     }
     
 }
