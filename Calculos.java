@@ -35,7 +35,22 @@ public class Calculos implements CalculosInterface{
     }
     
     @Override
-    public double Calcular(){
-        
+    public String Calcular(){
+        double resultado;
+        if (getOperador() == 1){
+            resultado = getNum1() + getNum2();
+            return "O resultado da soma dos números " + getNum1() + " e " + getNum2() + " é igual a: " + resultado;
+        } else if (getOperador() == 2){
+            resultado = getNum1() - getNum2();
+            return "O resultado da subtração dos números " + getNum1() + " e " + getNum2() + " é igual a: " + resultado;
+        } else if (getOperador() == 3){
+            resultado = getNum1() * getNum2();
+            return "O resultado da multiplicação dos números " + getNum1() + " e " + getNum2() + " é igual a: " + resultado;
+        } else if (getOperador() == 4){
+            resultado = getNum1() / getNum2();
+            return "O resultado da divisão dos números " + getNum1() + " e " + getNum2() + " é igual a: " + resultado;
+        } else {
+            return "Você escolheu uma opção inválida";
+        }
     }
 }
